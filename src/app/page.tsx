@@ -5,7 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import HeroSlider from "@/components/ui/HeroSlider";
 import Footer from "@/components/layout/Footer";
-import { BRIDAL_PACKAGES, REVIEWS, BUSINESS_HOURS, TREATWELL_LINK } from "@/lib/data";
+import { BRIDAL_PACKAGES, REVIEWS, BUSINESS_HOURS, TREATWELL_LINK, GOOGLE_REVIEWS_LINK } from "@/lib/data";
 import { ArrowRight, Star, Calendar, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/ui/Reveal";
@@ -161,11 +161,11 @@ export default function Home() {
               <h2 className="text-5xl md:text-7xl">Client <span className="italic">Experience</span></h2>
             </div>
           </Reveal>
-          <div className="flex overflow-x-auto gap-8 no-scrollbar pb-12 snap-x snap-mandatory">
+          <div className="flex overflow-x-auto gap-8 no-scrollbar pb-12 snap-x snap-mandatory scroll-smooth">
             {REVIEWS.map((review) => (
               <div 
                 key={review.name} 
-                className="flex-none w-80 md:w-96 p-10 bg-white shadow-xl shadow-charcoal/5 rounded-2xl border-t-2 border-gold snap-center"
+                className="flex-none w-80 md:w-96 p-8 md:p-10 bg-white shadow-xl shadow-charcoal/5 rounded-2xl border-t-2 border-gold snap-center group hover:-translate-y-2 transition-transform duration-300"
               >
                 <div className="flex gap-1 text-gold mb-8">
                   {[...Array(review.rating)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
@@ -178,6 +178,14 @@ export default function Home() {
               </div>
             ))}
           </div>
+          
+          <Reveal delay={0.2}>
+            <div className="mt-16 flex justify-center">
+              <Link href={GOOGLE_REVIEWS_LINK} target="_blank" rel="noopener noreferrer" className="btn-outline border-gold text-gold hover:bg-gold hover:text-ivory flex items-center gap-3">
+                Read More on Google <Star size={16} fill="currentColor" />
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 

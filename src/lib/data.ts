@@ -13,6 +13,7 @@ export const BUSINESS_HOURS = [
 ];
 
 export const TREATWELL_LINK = "https://www.treatwell.co.uk/place/dtrend-hair-and-beauty/";
+export const GOOGLE_REVIEWS_LINK = "https://www.google.com/search?sca_esv=8526ead1974f28d5&sxsrf=ANbL-n7JdQBfHUyjJQ2AUGFDceb55GRNjg:1775508188692&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOexVaHkt3-uyTEB0DyUWaj0QoA8fx09tmbHUOm3kkXZaVFtW4BHfiqHCWbVICiQ5DjXKFgIL8HpdL6pKttdKT7hZQ6nvRYTGKteHNvMAXOryYGK9VA%3D%3D&q=DtrenD+Hair+and+Beauty+Salon+Reviews&sa=X&ved=2ahUKEwiy1Ie3i9qTAxXdV0EAHd-lM10Q0bkNegQIKBAH&biw=2327&bih=859&dpr=1.1";
 
 export const NAV_LINKS = [
   { name: "Home", href: "/" },
@@ -128,6 +129,18 @@ export const REVIEWS = [
     name: "Samadhi Perera",
     service: "Bridal Styling",
     text: "DtrenD handled my bridal hair and makeup perfectly. They understood the cultural nuances of my Kandyan dressing. Exceptional.",
+    rating: 5,
+  },
+  {
+    name: "Sarah Jenkins",
+    service: "Highlights & Balayage",
+    text: "Absolutely love my new balayage! The team at DtrenD completely understood what I wanted and delivered beyond expectations. The color is so natural.",
+    rating: 5,
+  },
+  {
+    name: "Meera Patel",
+    service: "Keratin Treatment",
+    text: "My hair has never felt this smooth and healthy. The Keratin treatment here is a game changer. Friendly staff and exceptional service from everyone.",
     rating: 5,
   },
 ];
