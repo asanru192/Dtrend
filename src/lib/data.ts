@@ -4,6 +4,7 @@ export const PHONE_PRIMARY = "077 1177 1838";
 export const PHONE_SECONDARY = "020 3731 6582";
 export const EMAIL = "info@dtrend.uk";
 export const INSTAGRAM = "https://instagram.com/dtrend.uk";
+export const FACEBOOK = "https://www.facebook.com/dulanjalimakeup/?locale=en_GB";
 
 export const BUSINESS_HOURS = [
   { day: "Tuesday – Wednesday", hours: "10am – 7pm" },

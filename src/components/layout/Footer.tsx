@@ -1,6 +1,20 @@
 import Link from "next/link";
-import { SITE_NAME, ADDRESS, PHONE_PRIMARY, PHONE_SECONDARY, EMAIL, NAV_LINKS } from "@/lib/data";
-import { Camera, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import { SITE_NAME, ADDRESS, PHONE_PRIMARY, PHONE_SECONDARY, EMAIL, NAV_LINKS, INSTAGRAM, FACEBOOK } from "@/lib/data";
+import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+
+const FacebookIcon = ({ size = 24 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </svg>
+);
+
+const InstagramIcon = ({ size = 24 }: { size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+  </svg>
+);
 import { motion } from "framer-motion";
 
 export default function Footer() {
@@ -31,8 +45,13 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <motion.div whileHover={{ y: -5 }}>
-                <Link href="https://instagram.com" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-charcoal transition-luxury">
-                  <Camera size={18} />
+                <Link href={FACEBOOK} target="_blank" rel="noopener noreferrer" title="Facebook" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-charcoal transition-luxury">
+                  <FacebookIcon size={18} />
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ y: -5 }}>
+                <Link href={INSTAGRAM} target="_blank" rel="noopener noreferrer" title="Instagram" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-charcoal transition-luxury">
+                  <InstagramIcon size={18} />
                 </Link>
               </motion.div>
             </div>
