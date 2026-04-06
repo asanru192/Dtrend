@@ -27,7 +27,7 @@ export default function TeamPage() {
               </h1>
             </Reveal>
             <p className="text-ivory/60 text-xl font-light leading-relaxed max-w-xl">
-              Meet the master artistry lead behind DtrenD's signature couture styling and luxury beauty experiences.
+              Meet the master artistry lead behind DtrenD&apos;s signature couture styling and luxury beauty experiences.
             </p>
           </div>
         </div>

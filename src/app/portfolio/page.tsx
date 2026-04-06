@@ -84,7 +84,7 @@ export default function PortfolioPage() {
         <div className="container mx-auto px-6 text-center space-y-12">
           <h2 className="text-5xl md:text-7xl editorial-heading italic text-plum">Define Your <span className="text-gold">Moment</span></h2>
           <p className="max-w-md mx-auto text-charcoal/60 font-light text-xl leading-relaxed">
-            Personalize your identity for your next significant event. Consult with Harrow's most creative team.
+            Personalize your identity for your next significant event. Consult with Harrow&apos;s most creative team.
           </p>
           <div className="pt-8">
             <Link href={TREATWELL_LINK} className="btn-plum" target="_blank" rel="noopener noreferrer">

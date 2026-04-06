@@ -112,7 +112,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 text-center space-y-12">
           <h2 className="text-5xl md:text-7xl editorial-heading">Craft Your New <br/><span className="italic text-gold">Identity</span></h2>
           <p className="max-w-md mx-auto text-charcoal/60 font-light text-xl leading-relaxed">
-            Personalize your identity for your next significant event. Consult with Harrow's most creative team.
+            Personalize your identity for your next significant event. Consult with Harrow&apos;s most creative team.
           </p>
           <div className="pt-8 flex flex-col sm:flex-row gap-8 justify-center">
             <Link href={TREATWELL_LINK} target="_blank" rel="noopener noreferrer" className="btn-plum">

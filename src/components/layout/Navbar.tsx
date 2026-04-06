@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS, SITE_NAME, TREATWELL_LINK, PHONE_PRIMARY } from "@/lib/data";
+import { NAV_LINKS, TREATWELL_LINK, PHONE_PRIMARY } from "@/lib/data";
 import { motion, AnimatePresence } from "framer-motion";
 
 type NavbarProps = {

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { SITE_NAME, ADDRESS, PHONE_PRIMARY, PHONE_SECONDARY, EMAIL, NAV_LINKS } from "@/lib/data";
 import { Camera, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
