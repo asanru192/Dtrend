@@ -179,13 +179,13 @@ export default function Home() {
             ))}
           </div>
           
-          <Reveal delay={0.2}>
-            <div className="mt-16 flex justify-center">
+          <div className="mt-20 mb-4 flex justify-center w-full">
+            <Reveal delay={0.2}>
               <Link href={GOOGLE_REVIEWS_LINK} target="_blank" rel="noopener noreferrer" className="btn-outline border-gold text-gold hover:bg-gold hover:text-ivory flex items-center gap-3">
                 Read More on Google <Star size={16} fill="currentColor" />
               </Link>
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </section>
 
