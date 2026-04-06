@@ -161,11 +161,11 @@ export default function Home() {
               <h2 className="text-5xl md:text-7xl">Client <span className="italic">Experience</span></h2>
             </div>
           </Reveal>
-          <div className="flex overflow-x-auto gap-8 no-scrollbar pb-12 snap-x snap-mandatory scroll-smooth">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8">
             {REVIEWS.map((review) => (
               <div 
                 key={review.name} 
-                className="flex-none w-80 md:w-96 p-8 md:p-10 bg-white shadow-xl shadow-charcoal/5 rounded-2xl border-t-2 border-gold snap-center group hover:-translate-y-2 transition-transform duration-300"
+                className="p-8 md:p-10 bg-white shadow-xl shadow-charcoal/5 rounded-2xl border-t-2 border-gold group hover:-translate-y-2 transition-transform duration-300"
               >
                 <div className="flex gap-1 text-gold mb-8">
                   {[...Array(review.rating)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
